@@ -1,196 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Currículo profissional de Abraão Lucas Pedral Alves de Souza — Desenvolvimento de Sistemas, aplicações corporativas, automação e integrações.">
-  <meta name="theme-color" content="#10243a">
-  <title>Abraão Lucas Pedral Alves de Souza | Desenvolvedor de Sistemas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo de Abraão Lucas Pedral Alves de Souza, Desenvolvedor de Sistemas com experiência em automação, aplicações corporativas, dados e integração de sistemas.">
+  <meta name="theme-color" content="#101a2b">
+  <title>Abraão Lucas Souza | Desenvolvedor de Sistemas</title>
   <style>
-    :root {
-      color-scheme: light;
-      --navy: #10243a;
-      --blue: #176b87;
-      --accent: #1b879d;
-      --ink: #243447;
-      --muted: #607184;
-      --line: #dce5ec;
-      --paper: #ffffff;
-      --wash: #f2f6f9;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      padding: 32px 16px;
-      background: var(--wash);
-      color: var(--ink);
-      font: 15px/1.65 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    }
-    .resume {
-      width: min(900px, 100%);
-      margin: 0 auto;
-      background: var(--paper);
-      box-shadow: 0 18px 55px rgba(16,36,58,.10);
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    header {
-      padding: 44px 54px 38px;
-      background: var(--navy);
-      color: #fff;
-      border-bottom: 5px solid var(--accent);
-    }
-    h1 { margin: 0; font-size: clamp(27px, 4vw, 38px); line-height: 1.15; letter-spacing: -.7px; }
-    .headline { margin: 12px 0 18px; color: #a9dce5; font-size: 17px; font-weight: 600; }
-    .contacts { display: flex; flex-wrap: wrap; gap: 7px 20px; color: #e1eaf0; font-size: 13px; }
-    .contacts a { color: inherit; text-decoration: none; }
-    main { padding: 12px 54px 42px; }
-    section { padding: 24px 0 8px; border-bottom: 1px solid var(--line); }
-    section:last-child { border-bottom: 0; }
-    h2 {
-      margin: 0 0 14px;
-      color: var(--blue);
-      font-size: 14px;
-      letter-spacing: 1.35px;
-      text-transform: uppercase;
-    }
-    p { margin: 0 0 10px; }
-    .summary { font-size: 15.5px; }
-    .entry { margin: 0 0 20px; }
-    .entry:last-child { margin-bottom: 8px; }
-    .entry-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; }
-    h3 { margin: 0; color: var(--navy); font-size: 17px; line-height: 1.4; }
-    .period { color: var(--muted); font-size: 13px; font-weight: 600; white-space: nowrap; }
-    .org { margin: 3px 0 8px; color: var(--blue); font-weight: 600; }
-    ul { margin: 8px 0 0; padding-left: 19px; }
-    li { margin: 5px 0; padding-left: 2px; }
-    li::marker { color: var(--accent); }
-    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px 24px; }
-    .skill-group { padding: 13px 15px; background: #f6f9fb; border-left: 3px solid var(--accent); border-radius: 4px; }
-    .skill-group h3 { margin-bottom: 5px; font-size: 14px; }
-    .skill-group p { margin: 0; color: #43566a; font-size: 13.5px; }
-    .note { color: var(--muted); font-size: 13px; }
-    @media (max-width: 640px) {
-      body { padding: 0; background: #fff; }
-      .resume { border-radius: 0; box-shadow: none; }
-      header { padding: 34px 25px 28px; }
-      main { padding: 8px 25px 30px; }
-      .skills { grid-template-columns: 1fr; }
-    }
-    @media print {
-      @page { size: A4; margin: 13mm 14mm; }
-      body { padding: 0; background: #fff; font-size: 10pt; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-      .resume { width: 100%; box-shadow: none; border-radius: 0; }
-      header { padding: 25px 32px 22px; }
-      h1 { font-size: 25pt; }
-      main { padding: 4px 32px 20px; }
-      section { padding: 14px 0 5px; break-inside: avoid; }
-      h2 { margin-bottom: 8px; }
-      .entry { margin-bottom: 12px; break-inside: avoid; }
-      .skill-group { break-inside: avoid; }
-      a { color: inherit; text-decoration: none; }
-    }
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#111d30;--panel2:#15243a;--ink:#edf4fb;--muted:#a7b5c9;--line:#2a3a51;--cyan:#52dfcf;--blue:#63a7ff;--gold:#ffc879;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 14% 0%,#153b4b 0,transparent 34rem),var(--bg);color:var(--ink);font:15px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+    a{color:inherit}.wrap{width:min(1080px,calc(100% - 38px));margin:36px auto 70px}.hero{position:relative;overflow:hidden;padding:clamp(30px,6vw,68px);border:1px solid #315066;border-radius:26px;background:linear-gradient(125deg,rgba(20,43,62,.97),rgba(15,26,45,.96) 60%,rgba(26,46,63,.94));box-shadow:0 28px 80px #0005}
+    .hero:after{content:"";position:absolute;width:330px;height:330px;right:-120px;top:-145px;border:1px solid #52dfcf55;border-radius:50%;box-shadow:0 0 0 32px #52dfcf0b,0 0 0 72px #52dfcf08}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 16px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan)}
+    h1{max-width:760px;margin:0;font-size:clamp(34px,6vw,62px);line-height:1.04;letter-spacing:-2px}.name-accent{color:var(--cyan)}.role{margin:18px 0 0;color:#d9e6f3;font-size:clamp(17px,2.5vw,22px);font-weight:600}
+    .hero-bottom{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:31px;flex-wrap:wrap}.contact{display:flex;gap:10px 20px;flex-wrap:wrap;color:#d1dbea;font-size:13px}.contact a{text-decoration:none}.contact a:hover{color:var(--cyan)}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 15px;border:1px solid #527089;border-radius:10px;background:#ffffff08;color:var(--ink);font-weight:700;text-decoration:none;cursor:pointer}.btn.primary{border-color:var(--cyan);background:var(--cyan);color:#09202a}.btn:hover{transform:translateY(-1px)}
+    .layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.8fr);gap:20px;margin-top:20px}.column{display:grid;align-content:start;gap:20px}.card{padding:25px 27px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#142238ee,#101a2aee);box-shadow:0 14px 36px #0002}.section-head{display:flex;align-items:center;gap:11px;margin:0 0 16px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan)}.section-head:before{content:"";width:21px;height:2px;background:var(--cyan)}p{margin:0 0 10px}.summary{color:#d0dbe9;font-size:15.5px}
+    .timeline{position:relative;padding-left:21px}.timeline:before{content:"";position:absolute;left:4px;top:7px;bottom:10px;width:1px;background:var(--line)}.item{position:relative;margin:0 0 22px}.item:last-child{margin:0}.item:before{content:"";position:absolute;left:-21px;top:8px;width:9px;height:9px;border:2px solid var(--cyan);border-radius:50%;background:var(--panel)}h3{margin:0;color:var(--ink);font-size:17px;line-height:1.4}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:3px 0 8px;color:var(--muted);font-size:13px}.org{color:var(--blue);font-weight:750}.date{white-space:nowrap}.bullets{margin:8px 0 0;padding-left:18px;color:#ccd8e7}.bullets li{padding-left:3px;margin:6px 0}.bullets li::marker{color:var(--cyan)}
+    .project{padding:16px 0;border-top:1px solid var(--line)}.project:first-of-type{padding-top:0;border-top:0}.project h3{font-size:15px}.project p{margin:5px 0 0;color:#c3d0df;font-size:13.5px}.label{display:inline-block;margin-top:9px;padding:3px 8px;border:1px solid #365268;border-radius:999px;color:#9fe7dc;font-size:11px;font-weight:700}
+    .skills{display:grid;gap:13px}.skill h3{margin-bottom:5px;color:#eaf3fb;font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{padding:4px 8px;border:1px solid #33465e;border-radius:7px;background:#ffffff05;color:#c5d3e2;font-size:11.5px}
+    .education{padding-left:15px;border-left:2px solid var(--cyan)}.education h3{font-size:15px}.education p{margin:3px 0 0;color:var(--muted);font-size:13px}.language{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}.language:last-child{border:0}.language span:last-child{color:var(--muted);text-align:right}
+    footer{margin-top:17px;text-align:center;color:#77889d;font-size:11px}
+    @media(max-width:780px){.layout{grid-template-columns:1fr}.wrap{margin-top:18px}.hero{border-radius:19px}.card{padding:22px}}
+    @media(max-width:480px){.wrap{width:min(100% - 22px,1080px)}.contact{display:grid;gap:7px}.actions{width:100%}.btn{flex:1}}
+    @media print{ @page{size:A4;margin:12mm} :root{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#fff;--ink:#132235;--muted:#536478;--line:#d6dee7;--cyan:#087e79;--blue:#195d8c}
+      body{background:#fff;color:#192a3e;font-size:9.5pt;print-color-adjust:exact;-webkit-print-color-adjust:exact}.wrap{width:100%;margin:0}.hero,.card{color:#192a3e;background:#fff;box-shadow:none;border:1px solid #d5e0e8}.hero{padding:25px 30px;border-radius:12px}.hero:after{display:none}h1{font-size:28pt;color:#12243a}.name-accent,.role,.contact,.summary,.bullets,.project p,.tag,.language span:last-child,.meta{color:#344a60}.hero-bottom{margin-top:15px}.actions{display:none}.layout{grid-template-columns:1.5fr .8fr;gap:12px;margin-top:12px}.column{gap:12px}.card{padding:16px;border-radius:10px}.section-head{margin-bottom:10px;font-size:10pt}h3{font-size:11.5pt}.bullets li{margin:3px 0}.item{margin-bottom:13px}.project{padding:10px 0}.tag{background:#fff;border-color:#cfd9e3}.label{color:#087e79;border-color:#8dc4c2}footer{display:none}a{text-decoration:none}}
   </style>
 </head>
 <body>
-  <article class="resume">
-    <header>
-      <h1>Abraão Lucas Pedral Alves de Souza</h1>
-      <p class="headline">Desenvolvimento de Sistemas | Aplicações Corporativas | Automação e Integrações</p>
-      <div class="contacts" aria-label="Informações de contato">
-        <span>São Paulo – SP</span>
-        <span><a href="tel:+5511972749845">(11) 97274-9845</a></span>
-        <span><a href="mailto:lucaspedral2010@gmail.com">lucaspedral2010@gmail.com</a></span>
-        <span><a href="https://github.com/skrtt777" target="_blank" rel="noopener noreferrer">github.com/skrtt777</a></span>
+  <div class="wrap">
+    <header class="hero">
+      <p class="eyebrow"><span class="dot"></span> Tecnologia • Processos • Soluções</p>
+      <h1>Abraão Lucas <span class="name-accent">Souza</span></h1>
+      <p class="role">Desenvolvedor de Sistemas | Aplicações Corporativas, Automação e Integrações</p>
+      <div class="hero-bottom">
+        <div class="contact" aria-label="Contato">
+          <span>São Paulo, SP</span>
+          <a href="tel:+5511972749845">(11) 97274-9845</a>
+          <a href="mailto:lucaspedral2010@gmail.com">lucaspedral2010@gmail.com</a>
+          <a href="https://github.com/skrtt777" target="_blank" rel="noopener noreferrer">github.com/skrtt777</a>
+        </div>
+        <div class="actions">
+          <button class="btn primary" onclick="window.print()" aria-label="Imprimir ou salvar currículo em PDF">Imprimir / salvar PDF</button>
+          <a class="btn" href="mailto:lucaspedral2010@gmail.com?subject=Oportunidade%20profissional">Entrar em contato</a>
+        </div>
       </div>
     </header>
-
-    <main>
-      <section aria-labelledby="perfil">
-        <h2 id="perfil">Perfil profissional</h2>
-        <p class="summary">Profissional de Tecnologia da Informação com experiência no desenvolvimento e evolução de aplicações corporativas, automação de processos e integração de sistemas. Atuação em soluções para áreas administrativas e industriais, desde o levantamento de necessidades e modelagem de regras de negócio até implementação, testes, sustentação e melhoria contínua. Experiência com Power Platform, SharePoint, SQL Server, aplicações web e iniciativas de digitalização de processos.</p>
-      </section>
-
-      <section aria-labelledby="experiencia">
-        <h2 id="experiencia">Experiência profissional</h2>
-        <div class="entry">
-          <div class="entry-top">
-            <h3>Analista de TI – Aplicações e Integrações</h3>
-            <span class="period">2023 – Atual</span>
+    <div class="layout">
+      <div class="column">
+        <section class="card">
+          <h2 class="section-head">Perfil</h2>
+          <p class="summary">Desenvolvedor de Sistemas com experiência em tecnologia aplicada a processos corporativos e industriais. Transformo necessidades das áreas de negócio em aplicações, automações e integrações: do levantamento de requisitos e desenho das regras à implementação, análise de dados, testes e sustentação. Atuo com Microsoft Power Platform, SharePoint, SQL Server, Power BI e sistemas WMS/MES, conectando pessoas, processos e informação.</p>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Experiência profissional</h2>
+          <div class="timeline">
+            <article class="item">
+              <h3>Desenvolvedor de Sistemas</h3>
+              <div class="meta"><span class="org">ARTEB</span><span class="date">2023 – atual</span></div>
+              <ul class="bullets">
+                <li>Desenvolvo e evoluo aplicações corporativas com Power Apps e SharePoint para digitalizar processos e organizar dados operacionais.</li>
+                <li>Estruturo fluxos no Power Automate com aprovações, notificações, geração de documentos, controle de status e trilha de acompanhamento.</li>
+                <li>Atendo processos de qualidade, auditorias, gestão documental, apontamentos de fábrica, horas extras e liberação de notas fiscais.</li>
+                <li>Escrevo e analiso consultas SQL Server para investigar dados e apoiar integrações, relatórios e rastreabilidade entre WMS, produção, etiquetas e seriais.</li>
+                <li>Construo e aprimoro indicadores e painéis de BI para acompanhamento de qualidade, logística, pátio, produção e eficiência industrial.</li>
+                <li>Trabalho com usuários e áreas parceiras no levantamento de requisitos, desenho de regras de negócio, validação de cenários, correção de falhas e melhoria contínua.</li>
+                <li>Contribuo em iniciativas de integração entre sistemas corporativos e chão de fábrica, incluindo processos relacionados a WMS, MES e impressão de etiquetas.</li>
+              </ul>
+            </article>
           </div>
-          <p class="org">ARTEB</p>
-          <ul>
-            <li>Desenvolvimento e manutenção de aplicações corporativas com Power Apps, integradas ao SharePoint, para digitalização de processos e substituição de controles manuais.</li>
-            <li>Construção e manutenção de fluxos de automação com Power Automate, incluindo etapas de aprovação, notificações, geração de documentos e tratamento de informações.</li>
-            <li>Desenvolvimento e sustentação de soluções para processos de qualidade, auditorias, gestão documental, apontamentos industriais, horas extras e liberação de notas fiscais.</li>
-            <li>Criação e análise de consultas SQL Server para extração, validação e relacionamento de dados de sistemas corporativos, incluindo informações de WMS, produção, etiquetas e rastreabilidade.</li>
-            <li>Participação em iniciativas de BI e indicadores operacionais, apoiando a organização e interpretação de dados para acompanhamento dos processos.</li>
-            <li>Atuação em projetos de integração e digitalização ligados a ambientes industriais, incluindo iniciativas de WMS e MES, em conjunto com áreas de negócio e equipes técnicas.</li>
-            <li>Levantamento de requisitos com usuários, análise de regras de negócio, testes, identificação de falhas e evolução contínua das aplicações.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section aria-labelledby="projetos">
-        <h2 id="projetos">Projetos e desenvolvimento</h2>
-        <div class="entry">
-          <h3>Aplicações web e sistemas próprios</h3>
-          <p>Desenvolvimento de projetos web utilizando PHP e bancos de dados MySQL/MariaDB, incluindo soluções voltadas a finanças e organização de viagens. Configuração e administração inicial de ambientes Linux/VPS para hospedagem e execução de aplicações.</p>
-        </div>
-        <div class="entry">
-          <h3>Automação e integração de processos</h3>
-          <p>Exploração e implementação de fluxos de automação com n8n e integrações entre sistemas, formulários e canais de comunicação, com foco em reduzir tarefas manuais e padronizar o tratamento das informações.</p>
-        </div>
-      </section>
-
-      <section aria-labelledby="competencias">
-        <h2 id="competencias">Competências técnicas</h2>
-        <div class="skills">
-          <div class="skill-group">
-            <h3>Desenvolvimento</h3>
-            <p>PHP, JavaScript, Python, C++ e desenvolvimento web (HTML/CSS).</p>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Projetos em destaque</h2>
+          <article class="project">
+            <h3>Aplicações corporativas e fluxos de aprovação</h3>
+            <p>Digitalização de processos internos com Power Apps, SharePoint e Power Automate, incluindo auditorias, gestão de documentos, solicitações e aprovações com histórico de responsáveis, datas e comentários.</p>
+            <span class="label">Power Platform · SharePoint</span>
+          </article>
+          <article class="project">
+            <h3>BI para qualidade, logística e produção</h3>
+            <p>Modelagem de indicadores e painéis para acompanhar desvios, status de aprovação, movimentação de pátio, metas de produção, refugo e eficiência operacional, considerando filtros e regras do processo.</p>
+            <span class="label">Power BI · SQL · Modelagem de dados</span>
+          </article>
+          <article class="project">
+            <h3>Rastreabilidade industrial e WMS/MES</h3>
+            <p>Análise de consultas e relacionamentos de dados de ordens, itens, seriais, etiquetas e apontamentos de produção para apoiar rastreabilidade e integração entre sistemas de fábrica.</p>
+            <span class="label">SQL Server · WMS · MES</span>
+          </article>
+          <article class="project">
+            <h3>Portal de impressão de etiquetas para fornecedores</h3>
+            <p>Desenho da solução para permitir a geração e impressão de etiquetas pelo fornecedor, com acesso externo controlado, integração ao WMS e validações para garantir identificação correta dos materiais.</p>
+            <span class="label">Requisitos · Integração · WMS</span>
+          </article>
+          <article class="project">
+            <h3>Projetos web pessoais</h3>
+            <p>Desenvolvimento de projetos de finanças e viagens com PHP e MySQL/MariaDB, além de configuração inicial de ambiente Linux e VPS para hospedagem.</p>
+            <span class="label">PHP · MySQL/MariaDB · Linux</span>
+          </article>
+          <article class="project">
+            <h3>Automação de ocorrências e comunicação</h3>
+            <p>Desenho de fluxo para registro e acompanhamento de ocorrências 8D via WhatsApp, com protocolo, prazo, formulário e etapas de análise e encerramento.</p>
+            <span class="label">n8n · WhatsApp · Processos</span>
+          </article>
+        </section>
+      </div>
+      <aside class="column">
+        <section class="card">
+          <h2 class="section-head">Tecnologias</h2>
+          <div class="skills">
+            <div class="skill"><h3>Desenvolvimento</h3><div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+            <div class="skill"><h3>Dados</h3><div class="tags"><span class="tag">SQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">MariaDB</span><span class="tag">Power BI</span></div></div>
+            <div class="skill"><h3>Automação e colaboração</h3><div class="tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">SharePoint</span><span class="tag">n8n</span><span class="tag">GitHub</span></div></div>
+            <div class="skill"><h3>Integração e infraestrutura</h3><div class="tags"><span class="tag">APIs REST</span><span class="tag">WMS</span><span class="tag">MES</span><span class="tag">Linux</span><span class="tag">VPS</span><span class="tag">VPN</span></div></div>
           </div>
-          <div class="skill-group">
-            <h3>Banco de dados</h3>
-            <p>SQL Server, MySQL e MariaDB; consultas, relacionamentos e análise de dados.</p>
-          </div>
-          <div class="skill-group">
-            <h3>Plataformas e automação</h3>
-            <p>Microsoft Power Apps, Power Automate, SharePoint e n8n.</p>
-          </div>
-          <div class="skill-group">
-            <h3>Integrações e ferramentas</h3>
-            <p>APIs REST, GitHub, Visual Studio Code e integração entre aplicações.</p>
-          </div>
-          <div class="skill-group">
-            <h3>Dados e processos industriais</h3>
-            <p>Power BI, WMS, MES, rastreabilidade, indicadores e digitalização de processos.</p>
-          </div>
-          <div class="skill-group">
-            <h3>Ambientes</h3>
-            <p>Linux, VPS, configuração de serviços e fundamentos de redes e VPN.</p>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="formacao">
-        <h2 id="formacao">Formação acadêmica</h2>
-        <div class="entry">
-          <div class="entry-top">
-            <h3>Ciências Econômicas</h3>
-            <span class="period">2020 – 2024</span>
-          </div>
-          <p class="org">Universidade Paulista – UNIP</p>
-        </div>
-      </section>
-
-      <section aria-labelledby="idiomas">
-        <h2 id="idiomas">Idiomas</h2>
-        <p><strong>Inglês:</strong> Intermediário — boa leitura e escrita; conversação em desenvolvimento.</p>
-        <p><strong>Japonês:</strong> Básico — conhecimento de leitura em hiragana.</p>
-      </section>
-    </main>
-  </article>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Como trabalho</h2>
+          <div class="tags"><span class="tag">Levantamento de requisitos</span><span class="tag">Regras de negócio</span><span class="tag">Automação de processos</span><span class="tag">Integração de sistemas</span><span class="tag">Análise de dados</span><span class="tag">Testes funcionais</span><span class="tag">Sustentação</span><span class="tag">Melhoria contínua</span></div>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Formação</h2>
+          <div class="education"><h3>Ciências Econômicas</h3><p>Universidade Paulista (UNIP)</p><p>2020 – 2024</p></div>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Idiomas</h2>
+          <div class="language"><span>Português</span><span>Nativo</span></div>
+          <div class="language"><span>Inglês</span><span>Intermediário</span></div>
+          <div class="language"><span>Japonês</span><span>Básico</span></div>
+        </section>
+        <section class="card">
+          <h2 class="section-head">Diferenciais</h2>
+          <p class="summary">Visão de processo ponta a ponta, comunicação com áreas técnicas e operacionais e experiência em levar soluções digitais do requisito ao uso no dia a dia.</p>
+        </section>
+      </aside>
+    </div>
+    <footer>Currículo atualizado em novembro de 2026 · São Paulo, Brasil</footer>
+  </div>
 </body>
 </html>
